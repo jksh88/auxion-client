@@ -28,6 +28,7 @@ const AuctionPage = (props) => {
           auction: {
             ...curState.auction,
             currentHighestBid: auction.currentHighestBid,
+            bids: auction.bids,
           },
           description: curState.description,
         };
