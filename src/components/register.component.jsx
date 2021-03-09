@@ -90,7 +90,7 @@ const Register = (props) => {
         <div className="field">
           <label>Password</label>
           <input
-            type="text"
+            type="password"
             name="password"
             placeholder="password"
             value={state.password}
