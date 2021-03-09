@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { withRouter, useParams, Link } from 'react-router-dom';
+import './login.styles.css';
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
@@ -65,41 +66,26 @@ const Login = (props) => {
   return (
     <div>
       <form className="sign-in" onSubmit={handleSubmit}>
-        <div className="field" style={{ width: '100%' }}>
+        <div className="field">
           <label>
-            email
+            Email
             <input
               name="email"
               type="email"
               value={state.email}
               onChange={handleChange}
               required
-              style={{
-                width: '100%',
-                letterSpacing: '.2rem',
-                height: '2rem',
-                border: 'none',
-                borderBottom: '1px solid grey',
-              }}
             />
           </label>
         </div>
         <div className="field">
-          <label>password</label>
+          <label>Password</label>
           <input
             name="password"
             type="password"
             value={state.password}
             onChange={handleChange}
             required
-            style={{
-              width: '100%',
-              letterSpacing: '.3rem',
-              height: '2rem',
-              border: 'none',
-              borderBottom: '1px solid grey',
-              marginBottom: '1.5rem',
-            }}
           />
         </div>
         {/* <button disabled={!buttonEnabled}>Sign in</button> */}
