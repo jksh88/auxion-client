@@ -20,7 +20,7 @@ const PropertyList = () => {
       })
       .catch((err) => console.log(err));
   }, []);
-  if (!isLoading) {
+  if (isLoading) {
     return <Loading />;
   }
   return (
