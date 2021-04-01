@@ -24,7 +24,7 @@ const PropertyList = () => {
     return <Loading />;
   }
   return (
-    <div className="property-list">
+    <div className="propertylist">
       {properties.map(({ _id, ...otherProps }) => (
         <PropertyCard key={_id} {...otherProps} id={_id} />
       ))}
